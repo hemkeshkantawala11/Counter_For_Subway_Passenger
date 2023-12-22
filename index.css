@@ -1,16 +1,20 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
-body{
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url("station.jpeg");
     background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 h1 {
     margin-top: 4vh;
@@ -29,14 +33,28 @@ button{
     padding-top: 2vh;
     padding-bottom: 2vh;
     margin-bottom: 1vh;
-    border-radius: 5px;
+    border-radius: 5vh;
     font-size: 2vh;
 }
 
 #increment-btn{
     background-color: darkred;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#increment-btn:hover{
+    border: 0.7vh solid gold;
+    opacity: 1;
 }
 
 #save-btn{
     background-color: darkgreen;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#save-btn:hover{
+    border: 0.7vh solid gold;
+    opacity: 1;
 }
